@@ -14,7 +14,7 @@ module.exports = {
       return floor;
     }
 
-    if(destination <1){
+    if(currentFloor >3 && destination <1){
       floor =0;
 
       return floor;
