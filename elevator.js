@@ -6,6 +6,8 @@ module.exports = {
   goto: function(currentFloor,destination){  
     //floor = result
     var floor = 0;
+    var destination =0;
+    var currentFloor = 0;
 
     //if any floor above the 4th or below the ground floor is chosen, the result should return 0
     if(destination >3){
