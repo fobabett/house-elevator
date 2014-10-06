@@ -10,20 +10,20 @@ module.exports = {
     //var destination =0;
 
     //if any floor above the 4th is chosen, the result will return 0
-    if(destination >3){
+    if(parseInt(destination) >3){
       floor = 0;
 
       return floor;
     }
     //if any floor below the ground floor is chosen,the result will return 0
-    if(currentFloor >3 && destination <1){
+    if(currentFloor >3 && parseInt(destination) <1){
       floor =0;
 
       return floor;
     }
 
     //desired floor subtracted by the current floor will give the result
-    floor = destination - currentFloor;
+    floor = parseInt(destination) - currentFloor;
 
     return floor;
 
